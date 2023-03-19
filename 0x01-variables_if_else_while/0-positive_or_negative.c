@@ -15,15 +15,15 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (n < 0)
 {
-std::cout << n + ": is negative" << std::endl;
+cout << n + "is negative" << endl;
 }
 else if (n == 0)
 {
-std::cout << n + ": is zero" << std::endl;
+cout << n + "is zero" << endl;
 }
 else
 {
-std::cout << n + ":is positive" << std::endl;
+cout << n + ":is positive" << endl;
 }
 return (0);
 }
