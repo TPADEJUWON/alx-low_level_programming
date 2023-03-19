@@ -1,29 +1,29 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
-/* more headers goes there */
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 /**
- * main - Entry point
- * Description: 'n negative positive'
- * Return: Always 0 (Success)
+ * main - Entry point of the program
+ *
+ * Return: 0 if program executes successfully
  */
 int main(void)
 {
-int n;
 srand(time(0));
-n = rand() - RAND_MAX / 2;
-if (n < 0)
+int n = rand() % RAND_MAX - RAND_MAX / 2;
+std::cout << n << std::endl;
+
+if (n > 0)
 {
-cout << n + "is negative" << endl;
+std::cout << "is positive" << std::endl;
 }
 else if (n == 0)
 {
-cout << n + "is zero" << endl;
+std::cout << "is zero" << std::endl;
 }
 else
 {
-cout << n + ":is positive" << endl;
+std::cout << "is negative" << std::endl;
 }
 return (0);
 }
