@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include <iostream>
 /* more headers goes there */
 
 /**
@@ -15,15 +16,15 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (n < 0)
 {
-printf("%s %d", n + ":is negative");
+std::cout << n + ": is negative" << std::endl;
 }
 else if (n == 0)
 {
-printf("%s %d", n + ":is zero");
+std::cout << n + ": is zero" << std::endl;
 }
 else
 {
-printf("%s %d", n + ": is positive");
+std::cout << n + ":is positive" << std::endl;
 }
 return (0);
 }
