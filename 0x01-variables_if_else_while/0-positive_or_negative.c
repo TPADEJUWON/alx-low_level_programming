@@ -1,29 +1,34 @@
-#include <iostream>
-#include <cstdlib>
-#include <ctime>
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/* more headers goes there */
 
+/* betty style doc for function main goes there */
 /**
- * main - Entry point of the program
- *
- * Return: 0 if program executes successfully
- */
+* main - Entry point
+* 
+* Description: 'Negative Positive'
+* 
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-srand(time(0));
-int n = rand() % RAND_MAX - RAND_MAX / 2;
-std::cout << n << std::endl;
+	int n;
 
-if (n > 0)
-{
-std::cout << "is positive" << std::endl;
-}
-else if (n == 0)
-{
-std::cout << "is zero" << std::endl;
-}
-else
-{
-std::cout << "is negative" << std::endl;
-}
-return (0);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+	if (n > 0)
+	{
+		printf("n is possitive : %d\n", n);
+	}
+	else if (n == 0)
+	{
+		printf(" n is zero: %d\n", n);
+	}
+	else
+	{
+		printf("n is negative : %d\n", n);
+	}
+	return (0);
 }
