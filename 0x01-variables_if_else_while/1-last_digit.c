@@ -12,7 +12,7 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	int n,a;
+	int n, a;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -22,19 +22,15 @@ int main(void)
 
 	if (a > 5)
 	{
-		printf("Last digit of %d\n", n, "is", a, "and is greater than 5");
-	}
-	else if (a == 0)
-	{
-		printf("Last digit of %d\n", n, "is", a, "and is 0");
+		printf("Last digit of %d is %d and is greater than 5\n");
 	}
 	else if (a < 6 && a != 0)
 	{
-		printf("Last digit of %d\n", n, "is", a, "and is less than 6 and not 0");
+		printf("Last digit of %d is %d and is less than 6 and not 0\n");
 	}
 	else
 	{
-		Printf("Nothing is here");
+		Printf("Last digit of %d is %d and is 0\n);
 	}
 	return (0);
 }
