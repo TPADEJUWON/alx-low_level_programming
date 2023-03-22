@@ -5,7 +5,10 @@
  */
 int main(void)
 {
-	print_alphabet('abcdefghijklmnopqrstuvwxzy');
+	String a;
+
+	a = print_alphabet();
+	_putchar (a);
 	_putchar ('\n');
 	return (0);
 }
