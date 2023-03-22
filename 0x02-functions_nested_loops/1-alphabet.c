@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	_putchar ('abcdefghijklmnopqrstuvwxzy');
+	print_alphabet('abcdefghijklmnopqrstuvwxzy');
 	_putchar ('\n');
 	return (0);
 }
