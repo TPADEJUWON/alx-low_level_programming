@@ -1,1 +1,1 @@
-THis have to be here
+Tis is a static library
